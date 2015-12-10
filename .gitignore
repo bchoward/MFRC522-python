@@ -1,0 +1,13 @@
+*.pyc
+*.egg-info
+bower_components
+.Python
+
+
+*.swp
+.AppleDouble
+._*
+.DS_Store
+.DS_Store?
+
+
