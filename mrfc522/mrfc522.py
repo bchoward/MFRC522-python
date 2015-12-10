@@ -1,7 +1,7 @@
 # adapted from https://github.com/mxgxw/MFRC522-python
 
 import RPi.GPIO as GPIO
-import spidev as spi
+import spi 
 import signal
 import time
 import random
@@ -446,7 +446,7 @@ class MIFAREReader:
             (status,TagType) = mfr.MFRC522_Request(mfr.PICC_REQIDL)
 
             # If a card is found
-            if status == mfrMIFAREReader.MI_OK:
+            if status == mfr.MI_OK:
                 print "Card detected"
 
             # Get the UID of the card
