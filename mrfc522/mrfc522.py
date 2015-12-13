@@ -1,7 +1,7 @@
 # adapted from https://github.com/mxgxw/MFRC522-python
 
 import RPi.GPIO as GPIO
-import spi 
+import spi
 import signal
 import time
 import random
@@ -436,9 +436,9 @@ class MIFAREReader:
 
         # This loop keeps checking for chips. If one is near it will get the UID and authenticate
 
-	if not timeout or timeout < 1:
-	    print "borked timeout"
-	    sys.exit()
+        if not timeout or timeout < 1:
+            print "borked timeout"
+            sys.exit()
         start_time = time.time()
         while time.time() <= start_time + timeout:
 
